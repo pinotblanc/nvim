@@ -2,10 +2,6 @@
 
 relatively simple config with qol remaps & plugins
 
-## TODO
-
-- bootstrap packer install
-
 
 ### featured plugins
 
@@ -24,14 +20,9 @@ relatively simple config with qol remaps & plugins
 
 ### installation
 
-install packer (plugin manager)
+- install neovim
 
-```shell
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\ 
-~/.local/share/nvim/site/pack/packer/start/packer.nvim
-```
-
-clone this repo into config
+- clone this repo into config
 
 ```shell
 git clone --depth 1 https://github.com/pinotblanc/nvim.git\ 
@@ -40,7 +31,7 @@ git clone --depth 1 https://github.com/pinotblanc/nvim.git\
 
 ### dependencies
 
-[ripgrep](https://github.com/BurntSushi/ripgrep)
+[ripgrep](https://github.com/BurntSushi/ripgrep) (for grep proj search)
 
 
 ### remap cheatsheet
