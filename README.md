@@ -1,35 +1,40 @@
-### neovim config
+## neovim config
+
+relatively simple config with qol remaps & plugins
 
 
-### featuring
+### featured plugins
 
-mason (language server manager)
+[mason](https://github.com/williamboman/mason.nvim) (language server manager)
 
-telescope (fuzzy search)
+[telescope](https://github.com/nvim-telescope/telescope.nvim) (fuzzy search)
 
-undotree (powerful change history)
+[undotree](https://github.com/mbbill/undotree) (powerful change history)
 
-harpoon (buffer quick switcher)
+[harpoon](https://github.com/ThePrimeagen/harpoon) (buffer quick switcher)
 
 
 ### installation
 
-- install packer (plugin manager)
+install packer (plugin manager)
 
-    git clone --depth 1 https://github.com/wbthomason/packer.nvim\
-    ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```shell
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
 
-- clone this repo into config
+clone this repo into config
 
-    git clone --depth 1 https://github.com/pinotblanc/nvim\
-    ~/.config/nvim
-
+```shell
+git clone --depth 1 https://github.com/pinotblanc/nvim\
+~/.config/nvim
+```
 
 ### dependencies
 
-ripgrep
+[ripgrep](https://github.com/BurntSushi/ripgrep)
 
 
-### cheatsheet
+### remap cheatsheet
 
 
