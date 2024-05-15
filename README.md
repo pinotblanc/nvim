@@ -2,6 +2,12 @@
 
 relatively simple config with qol remaps & plugins
 
+# TODO
+
+bootstrap packer install
+
+check wether treesitter still needs work for first install
+
 
 ### featured plugins
 
@@ -38,6 +44,8 @@ git clone --depth 1 https://github.com/pinotblanc/nvim.git\
 ### remap cheatsheet
 
 ```shell
+# default [leader] is " "
+
 # === custom remaps =================
 [leader]pv # open netrw
 [J|K] # moves selection down/up
