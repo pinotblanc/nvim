@@ -6,8 +6,6 @@ relatively simple config with qol remaps & plugins
 
 - bootstrap packer install
 
-- check whether treesitter still needs work for first install
-
 
 ### featured plugins
 
