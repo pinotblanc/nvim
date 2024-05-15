@@ -2,11 +2,11 @@
 
 relatively simple config with qol remaps & plugins
 
-# TODO
+## TODO
 
-bootstrap packer install
+- bootstrap packer install
 
-check wether treesitter still needs work for first install
+- check whether treesitter still needs work for first install
 
 
 ### featured plugins
@@ -15,9 +15,13 @@ check wether treesitter still needs work for first install
 
 [telescope](https://github.com/nvim-telescope/telescope.nvim) (fuzzy search)
 
+[treesitter](https://github.com/nvim-treesitter/nvim-treesitter) (fast syntax tree parser)
+
 [undotree](https://github.com/mbbill/undotree) (powerful change history)
 
 [harpoon](https://github.com/ThePrimeagen/harpoon) (buffer quick switcher)
+
+[vim-fugitive](https://github.com/tpope/vim-fugitive) (git integration)
 
 
 ### installation
