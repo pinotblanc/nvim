@@ -26,7 +26,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 clone this repo into config
 
 ```shell
-git clone --depth 1 https://github.com/pinotblanc/nvim\
+git clone --depth 1 https://github.com/pinotblanc/nvim.git\
 ~/.config/nvim
 ```
 
