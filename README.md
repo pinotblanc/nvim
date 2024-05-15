@@ -19,14 +19,14 @@ relatively simple config with qol remaps & plugins
 install packer (plugin manager)
 
 ```shell
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\ 
 ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
 
 clone this repo into config
 
 ```shell
-git clone --depth 1 https://github.com/pinotblanc/nvim.git\
+git clone --depth 1 https://github.com/pinotblanc/nvim.git\ 
 ~/.config/nvim
 ```
 
