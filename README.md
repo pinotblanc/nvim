@@ -80,3 +80,85 @@ K #
 [leader]vrn # rename
 [ctrl]h # signature help
 ```
+
+### general vim cheatsheet
+
+```shell
+# === file exp (netrw) ==============
+% # create file
+d # create directory
+D # delete
+
+# === normal mode ===================
+# move cursor 1 row/char
+[h|j|k|l] # [left|down|up|right]
+# move cursor "many" rows
+[ctrl][d|u] # [down|up]
+# move one word
+w # to the right
+W # to the right, only regarding whitespaces
+b # to the left (back)
+B # to the left, only regarding whitespaces
+
+gg # move to start of buffer
+G # move to end of buffer
+
+/[search] # searches buffer for string [search]
+n # jumps to the next instance of [search]
+
+f [char] # jumps to next instance of [char]
+
+# replace (substitute) foo -> bar
+:s/[foo]/[bar]/g # global = whole line
+:%s/[foo]/[bar] # first in every line
+:%s/[foo]/[bar]/g # whole buffer
+
+
+% # jumps to start of surrounding bracket
+% # jumps to end of surrounding bracket
+
+$ # jump to end of line
+
+# c: change (delete & insert mode)
+# d: delete
+# i: inside
+# s: surrounding
+# t: to
+# ip: paragraph
+# ap: paragraph with new line
+# mod: [(|{|[|'|"] ('{' or '}' works)
+[c|d] [i|s|t|ap] [mod]
+
+I # insert before
+A # insert after
+o # open new line under & insert mode
+O # open new line above & insert mode
+K # appends following line to current
+
+u # undo
+CTRL+r # redo
+
+# === visual mode ===================
+v # normal visual mode
+SHIFT+v # visual line mode
+CTRL+v # visual block mode
+d # delete selection
+y # "yank"(=copy) selection
+p # paste
+
+# === plugins =======================
+# auto complete
+CTRL+x o
+
+# === window splitting: CTRL+w ======
+# regular split [s] vertical split [v]
+CTRL+w [s|w]
+# moving windows
+CTRL+w [H|J|K|L]
+# moving between windows
+CTRL+w [h|j|k|l]
+# create window w/ terminal
+:term
+# enter normal mode in vim terminal
+CTRL+w N
+```
