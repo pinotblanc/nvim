@@ -148,10 +148,6 @@ d # delete selection
 y # "yank"(=copy) selection
 p # paste
 
-# === plugins =======================
-# auto complete
-CTRL+x o
-
 # === window splitting: CTRL+w ======
 # regular split [s] vertical split [v]
 CTRL+w [s|w]
