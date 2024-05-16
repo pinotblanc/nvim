@@ -56,6 +56,8 @@ K # default but keeps cursor in place
 [leader]pf # open telescope (files)
 [leader]ps # open telescope (matching string)
 [ctrl]p    # open telescope (git proj)
+
+[ctrl]t # go back to previous buffer
 # === harpoon ===
 [leader]a # add file to list
 [ctrl]e # toggle list visibility 
