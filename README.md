@@ -51,20 +51,22 @@ K # default but keeps cursor in place
 [leader]x # make current buffer executable 
 [leader][leader] # sources buffer
 
-# === packets =======================
 # === telescope ===
 [leader]pf # open telescope (files)
 [leader]ps # open telescope (matching string)
 [ctrl]p    # open telescope (git proj)
 
 [ctrl]t # go back to previous buffer
+
 # === harpoon ===
 [leader]a # add file to list
 [ctrl]e # toggle list visibility 
 [ctrl] [h|j|k|l] # switch between files
+
 # === undotree ===
 [leader]u # toggle tree
 [ctrl]w + [h|j|k|l] # move between buffers
+
 # === lsp ===
 [ctrl]p # previous item in completion 
 [ctrl]n # next item in completion
