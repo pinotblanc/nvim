@@ -147,7 +147,10 @@ f [char] # jumps to next instance of [char]
 # s: sentence
 # p: paragraph
 # [(|{|[|'|"] ('{' or '}' works)
-[c|d] [i|s|t] [selection]
+[c|d] ([i|s|t]) [selection]
+
+"[reg][y|d] # copies/deletes selection into reg [reg]
+"[reg][p|P] # puts the contents of [reg] after/before cursor
 
 i # insert left to the cursor
 a # insert right to the cursor
@@ -161,6 +164,9 @@ dd # delete line at cursor
 u # undo
 CTRL+r # redo
 . # repeat last action
+
+q[macro][seq][macro] # records sequence of actions into reg "[macro]
+@[macro] # runs sequence from reg "[macro]
 
 # === visual mode ===================
 v # normal visual mode
