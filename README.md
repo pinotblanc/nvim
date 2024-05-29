@@ -96,16 +96,30 @@ D # delete
 # === normal mode ===================
 # move cursor 1 row/char
 [h|j|k|l] # [left|down|up|right]
-# move cursor "many" rows
-[ctrl][d|u] # [down|up]
+# move multiple rows
+[ctrl][d|u] # [down|up] half page
+[ctrl][f|b] # [down|up] full page
+
 # move one word
 w # to the right
 W # to the right, only regarding whitespaces
 b # to the left (back)
 B # to the left, only regarding whitespaces
+e # to the end of the word/next word
+E # to the end of the word, only regarding whitespaces
 
 gg # move to start of buffer
 G # move to end of buffer
+$ # move to end of line
+0 # move to start of line
+[(|)] # move to [prev|next] sentence
+[{|}] # move to [prev|next] paragraph
+* # go to next instance of the word under the cursor
+# # go to prev instance of the word under the cursor
+m [tag] # marks the current cursor position under [tag]
+` [tag] # returns cursor to [tag] position
+`` # switch between last two positions
+`. # jump to position where last edit happened
 
 /[search] # searches buffer for string [search]
 n # jumps to the next instance of [search]
@@ -121,26 +135,32 @@ f [char] # jumps to next instance of [char]
 % # jumps to start of surrounding bracket
 % # jumps to end of surrounding bracket
 
-$ # jump to end of line
-
+# === action ===
 # c: change (delete & insert mode)
 # d: delete
+# === modifier ===
 # i: inside
 # s: surrounding
 # t: to
-# ip: paragraph
-# ap: paragraph with new line
-# mod: [(|{|[|'|"] ('{' or '}' works)
-[c|d] [i|s|t|ap] [mod]
+# === selection ===
+# w: word
+# s: sentence
+# p: paragraph
+# [(|{|[|'|"] ('{' or '}' works)
+[c|d] [i|s|t] [selection]
 
-I # insert before
-A # insert after
+i # insert left to the cursor
+a # insert right to the cursor
+I # insert at start of line
+A # insert at end of line
 o # open new line under & insert mode
 O # open new line above & insert mode
 K # appends following line to current
 
+dd # delete line at cursor
 u # undo
 CTRL+r # redo
+. # repeat last action
 
 # === visual mode ===================
 v # normal visual mode
@@ -148,6 +168,7 @@ SHIFT+v # visual line mode
 CTRL+v # visual block mode
 d # delete selection
 y # "yank"(=copy) selection
+yy # copy line at cursor
 p # paste
 
 # === window splitting: CTRL+w ======
