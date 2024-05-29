@@ -1,7 +1,7 @@
 vim.opt.guicursor = "" -- block cursor on insert mode
 
 vim.opt.nu = true
-vim.opt.relativenumber = true
+vim.opt.number = true
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
