@@ -53,6 +53,9 @@ return require('packer').startup(function(use)
 	use { 'mbbill/undotree' }
 	use { 'tpope/vim-fugitive' }
 
+    -- file tree
+    use { 'nvim-tree/nvim-tree.lua', }
+
 	-- nvim natively supports the lsp (language server protocol)
 	use { 'neovim/nvim-lspconfig' }
 	use { 'williamboman/mason.nvim' }
