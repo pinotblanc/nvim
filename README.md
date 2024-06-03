@@ -9,6 +9,8 @@ relatively simple config with qol remaps & plugins
 
 [telescope](https://github.com/nvim-telescope/telescope.nvim) (fuzzy search)
 
+[nvim-tree](https://github.com/nvim-tree/nvim-tree.lua?tab=readme-ov-file) (tree file explorer)
+
 [treesitter](https://github.com/nvim-treesitter/nvim-treesitter) (fast syntax tree parser)
 
 [undotree](https://github.com/mbbill/undotree) (powerful change history)
@@ -20,13 +22,12 @@ relatively simple config with qol remaps & plugins
 
 ### installation
 
-- install neovim
+- install neovim (0.10.0+)
 
-- clone this repo into config
+- clone this repo into config:
 
 ```shell
-git clone --depth 1 https://github.com/pinotblanc/nvim.git\ 
-~/.config/nvim
+git clone --depth 1 https://github.com/pinotblanc/nvim.git ~/.config/nvim
 ```
 
 ### dependencies
@@ -40,13 +41,14 @@ git clone --depth 1 https://github.com/pinotblanc/nvim.git\
 # default [leader] is " "
 
 # === custom remaps =================
-[leader]pv # open netrw
-[J|K] # moves selection down/up
+Q # write and quit buffer
+[leader]pv # open file explorer
+[J|K] # moves selection (with visual mode) down/up
 K # default but keeps cursor in place
 [ctrl][d|u] # default but keeps cursor in place
 [n|N] # default but keeps cursor in place
 [ctrl][j|k] # jump between errors
-[leader][j|k]
+[leader][j|k] #
 [leader]s # edit all instances (at cursor)
 [leader]x # make current buffer executable 
 [leader][leader] # sources buffer
@@ -74,7 +76,6 @@ K # default but keeps cursor in place
 [ctrl][space] # starts completion
 
 gd # jump to definition
-K #
 [leader]vws #
 [leader]vd # open diagnostic
 [d # next diagnostic
@@ -88,7 +89,7 @@ K #
 ### general vim cheatsheet
 
 ```shell
-# === file exp (netrw) ==============
+# === netrw (currently not used) ====
 % # create file
 d # create directory
 D # delete
