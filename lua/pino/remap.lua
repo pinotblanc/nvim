@@ -18,7 +18,8 @@ vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 
 vim.keymap.set("i", "<C-c>", "<Esc>") -- allows to get out of insert mode w/ ctrl+c, even in vertical edit mode
 
-vim.keymap.set("n", "Q", vim.cmd.wq)
+vim.keymap.set("n", "Q", vim.cmd.q)
+vim.keymap.set("n", "<C-s>", vim.cmd.wa)
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
 vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz") -- jump between errors

@@ -41,7 +41,8 @@ git clone --depth 1 https://github.com/pinotblanc/nvim.git ~/.config/nvim
 # default [leader] is " "
 
 # === custom remaps =================
-Q # write and quit buffer
+Q # quit buffer
+[ctrl]s # write (save) all buffers
 [leader]pv # open file explorer
 [J|K] # moves selection (with visual mode) down/up
 K # default but keeps cursor in place
