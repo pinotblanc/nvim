@@ -51,10 +51,15 @@ return require('packer').startup(function(use)
 
 	use { 'theprimeagen/harpoon' }
 	use { 'mbbill/undotree' }
-	use { 'tpope/vim-fugitive' }
+    use { 'tpope/vim-fugitive' }
 
     -- file tree
-    use { 'nvim-tree/nvim-tree.lua', }
+    use {
+        'nvim-tree/nvim-tree.lua',
+        requires = {
+            'nvim-tree/nvim-web-devicons',
+        },
+    }
 
 	-- nvim natively supports the lsp (language server protocol)
 	use { 'neovim/nvim-lspconfig' }
