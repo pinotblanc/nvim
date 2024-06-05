@@ -1,11 +1,13 @@
 ## neovim config
 
-relatively simple config with qol remaps & plugins
+relatively simple config meant for code editing and latex
 
 
 ### featured plugins
 
 [mason](https://github.com/williamboman/mason.nvim) (language server manager)
+
+[vimtex](https://github.com/lervag/vimtex) (latex support)
 
 [telescope](https://github.com/nvim-telescope/telescope.nvim) (fuzzy search)
 
@@ -34,6 +36,10 @@ git clone --depth 1 https://github.com/pinotblanc/nvim.git ~/.config/nvim
 
 [ripgrep](https://github.com/BurntSushi/ripgrep) (for grep proj search)
 
+[latex](https://www.latex-project.org/get/)
+
+[zathura](https://pwmt.org/projects/zathura/) (light weight pdf viewer)
+
 
 ### remap cheatsheet
 
@@ -53,6 +59,16 @@ K # default but keeps cursor in place
 [leader]s # edit all instances (at cursor)
 [leader]x # make current buffer executable 
 [leader][leader] # sources buffer
+
+# === vimtex ===
+
+# vimtex [leader] is ","
+
+[leader]ll # starts continuous compiling & preview
+[leader]le # toggles quick fix menu
+[leader]lc # clears auxiliary files
+[leader]lv # jumps to forward search (jump between tex & pdf)
+[leader]lt # toggle table of contents
 
 # === telescope ===
 [leader]pf # open telescope (files)

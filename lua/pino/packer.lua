@@ -40,6 +40,10 @@ return require('packer').startup(function(use)
 		end
 	}
     ]]--
+    
+    -- =================================================================
+
+    use { 'lervag/vimtex', }
 
 	use {
 		'nvim-treesitter/nvim-treesitter',
