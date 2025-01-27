@@ -36,6 +36,7 @@ git clone --depth 1 https://github.com/pinotblanc/nvim.git ~/.config/nvim
 ### dependencies
 
 [ripgrep](https://github.com/BurntSushi/ripgrep) (for grep proj search)
+
 [nerd font](https://www.nerdfonts.com/font-downloads) (icons)
 
 
