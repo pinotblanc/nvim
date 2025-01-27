@@ -25,20 +25,20 @@ return require('packer').startup(function(use)
 
     use({
         'projekt0n/github-nvim-theme',
-        
+
         config = function()
             vim.cmd('colorscheme github_dark_high_contrast')
-		end
+        end
     })
 
     --[[
-	use {
-		'rebelot/kanagawa.nvim',
+    use {
+        'rebelot/kanagawa.nvim',
 
-		config = function()
-			vim.cmd('colorscheme kanagawa-wave')
-		end
-	}
+        config = function()
+            vim.cmd("colorscheme kanagawa-wave")
+        end
+    }
     ]]--
 
 	use {
@@ -48,7 +48,6 @@ return require('packer').startup(function(use)
 			ts_update()
 		end,
 	}
-
 	use { 'theprimeagen/harpoon' }
 	use { 'mbbill/undotree' }
     use { 'tpope/vim-fugitive' }
